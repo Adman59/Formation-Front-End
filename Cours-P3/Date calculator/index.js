@@ -30,3 +30,16 @@ end_date.addEventListener("change", (e) => {
         start_date.value = day.toISOString().split("T")[0];
     }
 });
+
+const bookingCalc = () => {
+    let diffTime = Math.abs(new Date(end_date.value) - new Date(start_date.value));
+
+    let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    
+    totalPerNight.textContent = diffDays * nightPrice.textContent;
+};
+
+start_date.addEventListener("change", bookingCalc);
+end_date.addEventListener("change", bookingCalc);
+
+bookingCalc();
