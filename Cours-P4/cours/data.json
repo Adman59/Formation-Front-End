@@ -1,0 +1,13 @@
+{
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    },
+    "editor.wordWrap": "on",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "One Dark Pro",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
+}
